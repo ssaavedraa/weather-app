@@ -1,0 +1,29 @@
+.card{
+    width: 270px;
+    height: 420px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom , #282c34, #102652);
+    margin: 0.7rem;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content{
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.close{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}

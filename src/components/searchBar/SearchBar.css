@@ -1,0 +1,37 @@
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    border: solid white 2px;
+    border-radius: 15px;
+    max-width: 25%;
+}
+
+.search-text{
+    background: none;
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin: 6px;
+    padding: 8px;
+    height: 15px;
+    font-size: 1rem;
+    outline: none;
+    color: white;
+}
+
+.icon{
+    z-index: 1;
+    color: white;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    color: white;
+}
