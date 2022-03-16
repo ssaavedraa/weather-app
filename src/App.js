@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { useState } from 'react';
 import Nav from './components/nav/nav.component.jsx'
 import Cards from './components/cards/cards.component.jsx'
@@ -19,7 +20,7 @@ function App() {
     console.log('la ciudad ya esta')
     }
     else if(city){
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ApiKey}&units=metric&lang=en`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ApiKey}&units=metric&lang=en`)
         .then(response => response.json())
         .then(data => {
           if(data.main !== undefined){
