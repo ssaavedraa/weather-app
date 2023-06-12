@@ -12,7 +12,6 @@ function App() {
   const [cities, setCities] = useState([]);
 
   const ApiKey = '4dca3ff0ed07ca0619ae59afdeb0f984'
-  console.log(cities)
 
   // Crea la funcion onSearch para buscar las ciudades
   function onSearch(city){
@@ -40,7 +39,7 @@ function App() {
             alert('City not found')
           }
         })
-        .catch(e => console.log(e))
+        .catch(e => console.error(e))
     }
     else{
       alert('Please enter a city name')
